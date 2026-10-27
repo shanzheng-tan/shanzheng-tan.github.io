@@ -9,8 +9,25 @@
 # Sources:
 #   UK:        https://entries.canoemarathon.org.uk/results/search?q=shanzheng+tan
 #   Australia: https://www.webscorer.com/profile/267056
+#   Singapore: https://scf.org.sg/event/2025-itcc/
 
-# ---------- Australia (Webscorer) ----------
+# ---------- Australia (Webscorer / Paddle Australia regattas) ----------
+
+- date: 2026-08-02
+  event: Salty Single Blader, Race 3
+  location: VIC, Australia
+  class: C2 Mixed Open (with Sandra Poeschmann)
+  position: 1
+  time: "40:38.2"
+  link: https://www.webscorer.com/race?raceid=442060
+
+- date: 2026-08-02
+  event: Salty Single Blader, Race 2
+  location: VIC, Australia
+  class: C1 Men Masters 35+
+  position: 1
+  time: "39:10.3"
+  link: https://www.webscorer.com/race?raceid=442051
 
 - date: 2026-05-17
   event: PV Marathon Yarra Bender
@@ -44,6 +61,14 @@
   time: "1:27:16.4"
   link: https://www.webscorer.com/racedetails?raceid=425162&did=579205&cid=3268270
 
+- date: 2026-03-01
+  event: Paddle Victoria Sprint State Championships
+  location: VIC, Australia
+  class: Men Open C1 200m (Final)
+  position: 1
+  time: "0:47.99"
+  link: https://paddle.regattas.au/regattas/1217/results
+
 - date: 2026-02-14
   event: Frank Harrison Interstate Marathon Cup
   location: Bonegilla, VIC, Australia
@@ -60,6 +85,14 @@
   time: "1:19:44.7"
   link: https://www.webscorer.com/racedetails?raceid=419952&did=569879&cid=3203244&gender=M
 
+- date: 2025-11-29
+  event: Canoe Sprint Grand Prix 1 & Long Distance National Championships
+  location: Australia
+  class: Men C1 5000m Open
+  position: 1
+  time: "33:17.89"
+  link: https://paddle.regattas.au/regattas/1213/results
+
 - date: 2025-11-15
   event: PVM 5-10km Championships
   location: Bendigo, VIC, Australia
@@ -68,7 +101,75 @@
   time: "35:35.2"
   link: https://www.webscorer.com/racedetails?raceid=413532&did=558681
 
-# ---------- United Kingdom (Canoe Marathon) ----------
+# ---------- Singapore (Singapore Canoe Federation) ----------
+
+# Source: Singapore Canoe Federation results post on Instagram. The event ran
+# 17-18 Jan; the exact day of this race isn't stated, so the 17th is assumed.
+- date: 2026-01-17
+  event: Singapore Canoe Marathon
+  location: Marina Reservoir, Singapore
+  class: Masters (35+) Men C1 12km
+  position: 1
+  link: https://www.instagram.com/p/DUFxxtRkfNq/?img_index=15
+
+# Source: 2025 ITCC start list & results sheet, listed as "Tan Shan Zheng" (Alumni - SIT)
+
+- date: 2025-04-26
+  event: Inter-Tertiary & Alumni Canoe Sprint Championships
+  location: MacRitchie Reservoir, Singapore
+  class: Open Men C1 1000m
+  position: 1
+  field: 5
+  time: "5:18.71"
+  link: https://docs.google.com/spreadsheets/d/1nESWheoYV_0Phu7sgAmvuNxKq17_gYIRf9dFI1rSPfE/edit?gid=671270564#gid=671270564
+
+- date: 2025-04-26
+  event: Inter-Tertiary & Alumni Canoe Sprint Championships
+  location: MacRitchie Reservoir, Singapore
+  class: Open Men C1 200m
+  position: 3
+  field: 6
+  time: "0:52.82"
+  link: https://docs.google.com/spreadsheets/d/1nESWheoYV_0Phu7sgAmvuNxKq17_gYIRf9dFI1rSPfE/edit?gid=671270564#gid=671270564
+
+# ---------- United Kingdom (Canoe Marathon / Regatta Search) ----------
+
+# Sprint regattas at the National Water Sports Centre, Holme Pierrepont.
+# Source: https://regattasearch.azurewebsites.net (Nottingham36, Nottingham38)
+
+- date: 2024-09-08
+  event: National MacGregor Inter-Club Challenge
+  location: Holme Pierrepont, Nottingham, UK
+  class: C1 A-D 200m (Final 2)
+  position: 3
+  time: "0:55.97"
+  link: https://regattasearch.azurewebsites.net/regatta/Nottingham38?SearchString=Shanzheng+Tan
+
+- date: 2024-09-07
+  event: National MacGregor Inter-Club Challenge
+  location: Holme Pierrepont, Nottingham, UK
+  class: C2 A-D 1000m (with George Bell)
+  position: 4
+  time: "4:35.65"
+  link: https://regattasearch.azurewebsites.net/regatta/Nottingham38?SearchString=Shanzheng+Tan
+
+- date: 2024-09-07
+  event: National MacGregor Inter-Club Challenge
+  location: Holme Pierrepont, Nottingham, UK
+  class: C1 A-D 500m (Final 2)
+  position: 7
+  time: "2:30.18"
+  link: https://regattasearch.azurewebsites.net/regatta/Nottingham38?SearchString=Shanzheng+Tan
+
+- date: 2024-06-08
+  event: British Masters & U23 Sprint National Championships
+  location: Holme Pierrepont, Nottingham, UK
+  class: C1 A-D 200m (Final)
+  position: 7
+  time: "1:02.69"
+  link: https://regattasearch.azurewebsites.net/regatta/Nottingham36?SearchString=Shanzheng+Tan
+
+# Marathon results. Source: https://entries.canoemarathon.org.uk
 
 - date: 2025-01-26
   event: Leighton Buzzard Winter Series Marathon
