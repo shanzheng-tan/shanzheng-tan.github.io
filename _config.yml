@@ -5,6 +5,9 @@ baseurl: "" # empty: user sites are served from the domain root
 
 lang: en
 
+# Visit statistics (https://shanzheng-tan.goatcounter.com). Delete to turn off.
+goatcounter: shanzheng-tan
+
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
