@@ -1,0 +1,49 @@
+# One entry per paper. Order does not matter; the page groups by year (newest first).
+#
+#   type:     journal | conference | preprint | chapter | patent | thesis | other
+#   selected: true  -> also shown on the home page
+#   links:    any of pdf, doi, code, slides, poster, video, patent (omit the ones you don't have)
+#
+# Source: https://scholar.google.com/citations?user=mVXXc7MAAAAJ
+# Author lists copied from Crossref / Google Patents.
+
+- title: "World and Human Action Models towards gameplay ideation"
+  authors: "Anssi Kanervisto, Dave Bignell, Linda Yilin Wen, Martin Grayson, Raluca Georgescu, Sergio Valcarcel Macua, Shan Zheng Tan, Tabish Rashid, Tim Pearce, Yuhan Cao, Abdelhak Lemkhenter, Chentian Jiang, Gavin Costello, Gunshi Gupta, Marko Tot, Shu Ishida, Tarun Gupta, Udit Arora, Ryen W. White, Sam Devlin, Cecily Morrison, Katja Hofmann"
+  venue: "Nature 638, 656-663"
+  year: 2025
+  type: journal
+  selected: true
+  links:
+    doi: https://doi.org/10.1038/s41586-025-08600-3
+
+- title: "Generative Neural Application Engine"
+  authors: "Martin Grayson, Cecily Morrison, Yilin Wen, Katja Hofmann, Sam Devlin, Anssi Kanervisto, Shan Zheng Tan"
+  venue: "US Patent Application 2025/0190768 A1, Microsoft Technology Licensing"
+  year: 2025
+  type: patent
+  links:
+    patent: https://patents.google.com/patent/US20250190768A1/en
+
+- title: "Imitating Human Behaviour with Diffusion Models"
+  authors: "Tim Pearce, Tabish Rashid, Anssi Kanervisto, Dave Bignell, Mingfei Sun, Raluca Georgescu, Sergio Valcarcel Macua, Shan Zheng Tan, Ida Momennejad, Katja Hofmann, Sam Devlin"
+  venue: "International Conference on Learning Representations (ICLR)"
+  year: 2023
+  type: conference
+  links:
+    pdf: https://arxiv.org/abs/2301.10677
+
+- title: "Unified IIoT Cloud Platform for Smart Factory"
+  authors: "Shan Zheng Tan, Michael Entendez Labastida"
+  venue: "Implementing Industry 4.0, Intelligent Systems Reference Library vol. 202, Springer, pp. 55-78"
+  year: 2021
+  type: chapter
+  links:
+    doi: https://doi.org/10.1007/978-3-030-67270-6_3
+
+- title: "An Implementation of Blockchain Decentralized Application for Industrial IoT Scenarios"
+  authors: "Wei Chit Tan, Weijia Fu, Shan Zheng Tan"
+  venue: "Implementing Industry 4.0, Intelligent Systems Reference Library vol. 202, Springer, pp. 377-398"
+  year: 2021
+  type: chapter
+  links:
+    doi: https://doi.org/10.1007/978-3-030-67270-6_14

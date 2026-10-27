@@ -1,0 +1,16 @@
+{% comment %} One publication entry. Usage: {% include publication.html pub=p %} {% endcomment %}
+{% assign p = include.pub %}
+{% assign authors = p.authors %}
+{% for name in site.data.profile.pub_names %}
+  {% capture me %}<strong>{{ name }}</strong>{% endcapture %}
+  {% assign authors = authors | replace: name, me %}
+{% endfor %}
+<li class="pub" data-tags="{{ p.type }}">
+  <span class="pub-type pub-type--{{ p.type }}">{{ p.type }}</span>
+  <div class="pub-body">
+    <p class="pub-title">{{ p.title }}</p>
+    <p class="pub-authors">{{ authors }}</p>
+    <p class="pub-venue">{{ p.venue }}, {{ p.year }}</p>
+    {% include link-buttons.html links=p.links %}
+  </div>
+</li>

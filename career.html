@@ -1,0 +1,37 @@
+---
+layout: page
+title: Career
+permalink: /career/
+intro: Where I've worked and studied.
+---
+{% if site.data.profile.resume_pdf %}
+<p><a class="pill pill--accent" href="{{ site.data.profile.resume_pdf | relative_url }}">Download résumé (PDF)</a></p>
+{% endif %}
+
+<ol class="timeline">
+  {% for item in site.data.career %}
+  <li class="timeline-item timeline-item--{{ item.type }}">
+    <div class="timeline-date">{% if item.start %}{{ item.start }} – {% endif %}{{ item.end }}</div>
+    <div class="timeline-card">
+      <span class="timeline-kind">{{ item.type }}</span>
+      <h2>{{ item.role }}</h2>
+      <p class="timeline-org">{{ item.org }}{% if item.location %} · {{ item.location }}{% endif %}</p>
+      {% if item.summary %}<p>{{ item.summary }}</p>{% endif %}
+      {% if item.highlights %}
+      <ul>
+        {% for h in item.highlights %}<li>{{ h }}</li>{% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>
+
+{% if site.data.certifications %}
+<section class="certs">
+  <h2>Certifications &amp; awards</h2>
+  <ul>
+    {% for c in site.data.certifications %}<li>{{ c }}</li>{% endfor %}
+  </ul>
+</section>
+{% endif %}

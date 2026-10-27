@@ -1,0 +1,23 @@
+# Who you are. Used on the home page, header and footer.
+
+name: Shanzheng Tan
+initials: ST # shown when no photo is set
+# Every way your name appears in author lists; matches get bolded.
+pub_names:
+  - Shan Zheng Tan
+  - S. Z. Tan
+role: Senior Technical Programme Manager, Generative AI
+organisation: Canva
+tagline: I take generative AI from research to products people use.
+photo: /assets/img/profile.jpg # square works best
+resume_pdf: /assets/files/Resume_Shanzheng_Tan.pdf
+
+links:
+  - label: Email
+    url: mailto:shan.hello@outlook.com
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/shan-zheng-tan/
+  - label: Google Scholar
+    url: https://scholar.google.com/citations?user=mVXXc7MAAAAJ
+  - label: GitHub
+    url: https://github.com/shan-sherif

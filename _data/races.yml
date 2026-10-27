@@ -1,0 +1,148 @@
+# Race results for the Beyond Work page. Order does not matter; newest shown first.
+#
+#   date:     YYYY-MM-DD
+#   position: whole number only (1, 2, 3…) — leave empty for DNF/DNS and use status
+#   status:   optional text such as DNF, DNS, DSQ
+#   field:    optional number of starters, shown as "2 / 18"
+#   link:     optional link to official results
+#
+# Sources:
+#   UK:        https://entries.canoemarathon.org.uk/results/search?q=shanzheng+tan
+#   Australia: https://www.webscorer.com/profile/267056
+
+# ---------- Australia (Webscorer) ----------
+
+- date: 2026-05-17
+  event: PV Marathon Yarra Bender
+  location: Fairfield, VIC, Australia
+  class: C2 Doubles 9km
+  position: 1
+  time: "51:34.9"
+  link: https://www.webscorer.com/racedetails?raceid=432394&did=590872&cid=3358214
+
+- date: 2026-04-11
+  event: Long Course Singles (ICF Masters)
+  location: Campbell, ACT, Australia
+  class: ICF C1 M 35-49
+  position: 1
+  time: "1:53:41.3"
+  link: https://www.webscorer.com/racedetails?raceid=427498&did=582864&cid=3293821
+
+- date: 2026-04-10
+  event: Short Course with Portage (ICF Masters)
+  location: Campbell, ACT, Australia
+  class: ICF C1 M 35-44
+  position: 1
+  time: "19:45.7"
+  link: https://www.webscorer.com/racedetails?raceid=427353&did=582638&cid=3292384
+
+- date: 2026-03-21
+  event: Victorian Canoe Marathon Championships
+  location: Newtown, VIC, Australia
+  class: UC1 M Open 13km
+  position: 2
+  time: "1:27:16.4"
+  link: https://www.webscorer.com/racedetails?raceid=425162&did=579205&cid=3268270
+
+- date: 2026-02-14
+  event: Frank Harrison Interstate Marathon Cup
+  location: Bonegilla, VIC, Australia
+  class: Canoe Open 26km
+  position: 7
+  time: "2:19:55.1"
+  link: https://www.webscorer.com/racedetails?raceid=421399&did=572476&cid=3219715
+
+- date: 2026-02-01
+  event: Saltwater Canoe Classic, Race 1
+  location: Footscray, VIC, Australia
+  class: C1 M 12km
+  position: 1
+  time: "1:19:44.7"
+  link: https://www.webscorer.com/racedetails?raceid=419952&did=569879&cid=3203244&gender=M
+
+- date: 2025-11-15
+  event: PVM 5-10km Championships
+  location: Bendigo, VIC, Australia
+  class: Canoe 5km
+  position: 1
+  time: "35:35.2"
+  link: https://www.webscorer.com/racedetails?raceid=413532&did=558681
+
+# ---------- United Kingdom (Canoe Marathon) ----------
+
+- date: 2025-01-26
+  event: Leighton Buzzard Winter Series Marathon
+  location: Leighton Buzzard, UK
+  class: C1/SUP Advanced
+  position: 2
+  link: https://entries.canoemarathon.org.uk/results/races/2025/leighton-buzzard-winter-series-marathon#race-c1sup-adv
+
+- date: 2024-12-01
+  event: Cambridge Winter Series Marathon
+  location: Cambridge, UK
+  class: C1/SUP Advanced
+  position: 2
+  link: https://entries.canoemarathon.org.uk/results/races/2024/cambridge-winter-series-marathon#race-c1sup-adv
+
+- date: 2024-10-13
+  event: Chelmer Hasler
+  location: Chelmsford, UK
+  class: Division 7
+  position: 16
+  link: https://entries.canoemarathon.org.uk/results/races/2024/chelmer-hasler-2024#race-div7
+
+- date: 2024-06-02
+  event: Bishop's Stortford Hasler
+  location: Bishop's Stortford, UK
+  class: Division 8
+  position: 2
+  link: https://entries.canoemarathon.org.uk/results/races/2024/bishops-stortford-hasler-race-2024#race-div8
+
+- date: 2024-04-28
+  event: 70th Bedford Hasler Marathon
+  location: Bedford, UK
+  class: Division 8
+  position: 7
+  link: https://entries.canoemarathon.org.uk/results/races/2024/70th-bedford-hasler-marathon#race-div8
+
+- date: 2024-03-24
+  event: Cambridge Hasler Marathon
+  location: Cambridge, UK
+  class: Division 7
+  position: 2
+  link: https://entries.canoemarathon.org.uk/results/races/2024/cambridge-hasler-marathon#race-div7
+
+- date: 2023-10-15
+  event: Chelmer Hasler
+  location: Chelmsford, UK
+  class: Division 8
+  position: 1
+  link: https://entries.canoemarathon.org.uk/results/races/2023/chelmer-hasler#race-div8
+
+- date: 2023-07-09
+  event: Bishop's Stortford Hasler
+  location: Bishop's Stortford, UK
+  class: Division 9
+  position: 1
+  link: https://entries.canoemarathon.org.uk/results/races/2023/bishops-stortford-hasler-race-2023#race-div9
+
+- date: 2023-06-18
+  event: Leighton Buzzard Hasler
+  location: Leighton Buzzard, UK
+  class: Division 9
+  position: 4
+  link: https://entries.canoemarathon.org.uk/results/races/2023/leighton-buzzard-hasler-2023#race-div9
+
+- date: 2023-04-30
+  event: 69th Bedford Hasler Marathon
+  location: Bedford, UK
+  class: Division 9
+  position: 12
+  link: https://entries.canoemarathon.org.uk/results/races/2023/69th-bedford-hasler-marathon#race-div9
+
+- date: 2023-02-12
+  event: Cambridge Hasler Marathon
+  location: Cambridge, UK
+  class: Division 9
+  position: 8
+  link: https://entries.canoemarathon.org.uk/results/races/2023/cambridge-hasler-marathon#race-div9

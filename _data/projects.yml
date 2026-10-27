@@ -1,0 +1,15 @@
+# Mini projects, shown in this order.
+#
+#   image:    optional, e.g. /assets/img/projects/thing.jpg (16:9 works best)
+#   featured: true -> also shown on the home page
+#   links:    any of code, demo, writeup (omit the ones you don't have)
+
+- title: Pi MIDI Router
+  summary: >-
+    Standalone MIDI router for Raspberry Pi. Route, remap channels and filter
+    USB MIDI gear from a web dashboard, then play with no computer or DAW.
+  year: 2026
+  tags: [Raspberry Pi, Python, MIDI]
+  featured: true
+  links:
+    code: https://github.com/shan-sherif/pi-midi-router

@@ -1,0 +1,20 @@
+---
+layout: page
+title: Projects
+permalink: /projects/
+intro: Small builds, experiments and side projects.
+---
+{% assign all_tags = site.data.projects | map: "tags" | join: "," | split: "," | uniq | sort %}
+
+<div data-filter-root>
+  <div class="filter-bar" role="group" aria-label="Filter by tag">
+    <button type="button" data-filter="all" aria-pressed="true">All</button>
+    {% for tag in all_tags %}
+    <button type="button" data-filter="{{ tag | slugify }}" aria-pressed="false">{{ tag }}</button>
+    {% endfor %}
+  </div>
+
+  <div class="card-grid">
+    {% for p in site.data.projects %}{% include project-card.html project=p %}{% endfor %}
+  </div>
+</div>

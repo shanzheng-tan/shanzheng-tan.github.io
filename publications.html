@@ -1,0 +1,27 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+intro: Papers I've authored or contributed to.
+---
+{% assign pubs = site.data.publications %}
+{% assign types = pubs | map: "type" | uniq | sort %}
+{% assign by_year = pubs | group_by: "year" | sort: "name" | reverse %}
+
+<div data-filter-root>
+  <div class="filter-bar" role="group" aria-label="Filter by type">
+    <button type="button" data-filter="all" aria-pressed="true">All</button>
+    {% for t in types %}
+    <button type="button" data-filter="{{ t }}" aria-pressed="false">{{ t | capitalize }}</button>
+    {% endfor %}
+  </div>
+
+  {% for group in by_year %}
+  <section class="pub-year" data-filter-section>
+    <h2>{{ group.name }}</h2>
+    <ol class="pub-list">
+      {% for p in group.items %}{% include publication.html pub=p %}{% endfor %}
+    </ol>
+  </section>
+  {% endfor %}
+</div>

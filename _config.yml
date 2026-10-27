@@ -1,0 +1,17 @@
+title: Shanzheng Tan
+description: Professional profile, publications, career, projects and life beyond work.
+url: "https://shanzheng-tan.github.io"
+baseurl: "" # empty: user sites are served from the domain root
+
+lang: en
+
+markdown: kramdown
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

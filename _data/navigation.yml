@@ -1,0 +1,15 @@
+# Top navigation, in display order.
+
+- title: About
+  url: /
+- title: Publications
+  url: /publications/
+- title: Career
+  url: /career/
+- title: Projects
+  url: /projects/
+# "Beyond Work" covers hobbies, water sports, race results and 360° photos.
+# Alternative name considered for the future: "Off the Clock".
+# To switch, change the title below (and optionally the permalink in beyond-work.html).
+- title: Beyond Work
+  url: /beyond-work/

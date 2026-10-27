@@ -1,0 +1,80 @@
+# Career timeline, newest first (shown in this order).
+#
+#   type: work | education
+#   end:  leave as "Present" for your current role
+#
+# Source: assets/files/Resume_Shanzheng_Tan.pdf
+
+- type: work
+  role: Senior Technical Programme Manager (Generative AI)
+  org: Canva
+  location: Australia
+  start: Jul 2025
+  end: Present
+  summary: Driving delivery of generative AI initiatives across a product group of 70+.
+  highlights:
+    - Align strategy with business goals, contributing to measurable increases in user adoption and engagement.
+    - Unlock operational efficiencies through AI-driven automation, reducing manual workload and improving team velocity.
+    - Foster collaboration through workshops and planning sessions.
+
+- type: work
+  role: Technical Programme Manager (Game Intelligence)
+  org: Microsoft Research Cambridge
+  location: United Kingdom
+  start: Mar 2022
+  end: Apr 2025
+  summary: Directed multimodal generative AI research programmes, leading to the launch of Copilot Gaming Experiences.
+  highlights:
+    - Ran the programme behind WHAM (Muse), published in Nature in 2025, alongside multiple open source releases with compliance and responsible AI practices.
+    - Co-inventor on the Generative Neural Application Engine patent.
+    - Built and moderated a global research community, including organising the Gaming and AI RIA Workshop.
+
+- type: work
+  role: Technical PI
+  org: A*STAR
+  location: Singapore
+  start: May 2021
+  end: Feb 2022
+  summary: Defined the technical vision and strategy of the Clinical Science VR programme, aligned with research goals.
+  highlights:
+    - Managed budgets, hiring and resources for optimal utilisation and cost efficiency.
+
+- type: work
+  role: Team Lead (Extended Reality)
+  org: A*STAR
+  location: Singapore
+  start: Aug 2020
+  end: Feb 2022
+  summary: Led and hired a team of 8 engineers and scientists developing XR solutions.
+  highlights:
+    - Partnered with MNCs and SMEs to deliver XR solutions for an S$18m smart manufacturing joint lab partnership.
+
+- type: work
+  role: Software Engineer (Frontend)
+  org: A*STAR
+  location: Singapore
+  start: Aug 2019
+  end: Aug 2020
+  summary: Designed user interfaces for Industry 4.0 projects.
+  highlights:
+    - Facilitated and presented Model Factory @ ARTC, highlighting research and success stories to stakeholders.
+
+- type: work
+  role: Executive
+  org: Infocomm Media Development Authority (IMDA)
+  location: Singapore
+  start: Dec 2017
+  end: Jul 2019
+  summary: Designed and launched nationwide STEM learning experiences in AI, XR, IoT and cybersecurity.
+  highlights:
+    - Developed and delivered interactive technology exhibits for diverse audiences at nationwide exhibitions and events.
+
+- type: education
+  role: BEng (Hons) Marine Engineering, First Class Honours
+  org: Newcastle University
+  location: United Kingdom
+  start: # TODO: add start year
+  end: # TODO: add graduation year
+  highlights:
+    - President & Captain, Canoe Sprint.
+    - NCL+ Award.

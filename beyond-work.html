@@ -1,0 +1,113 @@
+---
+# "Beyond Work" — alternative name considered for the future: "Off the Clock".
+# To rename, change `title` here and the matching entry in _data/navigation.yml
+# (optionally the permalink too, e.g. /off-the-clock/).
+layout: page
+title: Beyond Work
+permalink: /beyond-work/
+pannellum: true
+intro: Canoe racing, water sports and the places they take me.
+---
+
+{% comment %} ---------- Activities ---------- {% endcomment %}
+<section class="bw-section">
+  <h2>What I do</h2>
+  <div class="card-grid">
+    {% for a in site.data.activities %}
+    <article class="card activity-card">
+      {% if a.image %}
+      <img class="card-media card-media--4x3" src="{{ a.image | relative_url }}" alt="{{ a.name }}" loading="lazy">
+      {% else %}
+      <div class="card-media card-media--4x3 card-media--water" aria-hidden="true"></div>
+      {% endif %}
+      <div class="card-body">
+        <h3>{{ a.name }}</h3>
+        {% if a.since %}<p class="muted">Since {{ a.since }}</p>{% endif %}
+        <p>{{ a.summary }}</p>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+{% comment %} ---------- 360° views ---------- {% endcomment %}
+<section class="bw-section">
+  <h2>360° views</h2>
+  {% if site.data.panoramas and site.data.panoramas.size > 0 %}
+  <p class="muted">Drag to look around. Use the button to go full screen.</p>
+  <div class="pano-grid">
+    {% for pano in site.data.panoramas %}
+    <figure class="pano">
+      <div class="pano-viewer"
+           data-panorama="{{ pano.image | relative_url }}"
+           {% if pano.preview %}data-preview="{{ pano.preview | relative_url }}"{% endif %}
+           role="img" aria-label="360° photo: {{ pano.title }}"></div>
+      <figcaption>
+        <strong>{{ pano.title }}</strong>
+        {% if pano.location or pano.date %}
+        <span class="muted">{{ pano.location }}{% if pano.location and pano.date %} · {% endif %}{% if pano.date %}{{ pano.date | date: "%b %Y" }}{% endif %}</span>
+        {% endif %}
+        {% if pano.caption %}<span>{{ pano.caption }}</span>{% endif %}
+      </figcaption>
+    </figure>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="empty-note">360° photos coming soon.</p>
+  {% endif %}
+</section>
+
+{% comment %} ---------- Race results ---------- {% endcomment %}
+{% assign races = site.data.races | sort: "date" | reverse %}
+{% assign podiums = races | where_exp: "r", "r.position <= 3" %}
+{% assign wins = races | where: "position", 1 %}
+{% capture years %}{% for r in races %}{{ r.date | date: "%Y" }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign years = years | split: "," | uniq %}
+
+<section class="bw-section" id="racing">
+  <h2>Canoe racing results</h2>
+
+  <dl class="stats">
+    <div><dt>Races</dt><dd>{{ races.size }}</dd></div>
+    <div><dt>Podiums</dt><dd>{{ podiums.size }}</dd></div>
+    <div><dt>Wins</dt><dd>{{ wins.size }}</dd></div>
+    <div><dt>Seasons</dt><dd>{{ years.size }}</dd></div>
+  </dl>
+
+  <div data-filter-root>
+    <div class="filter-bar" role="group" aria-label="Filter by season">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      {% for y in years %}
+      <button type="button" data-filter="{{ y }}" aria-pressed="false">{{ y }}</button>
+      {% endfor %}
+    </div>
+
+    <div class="table-wrap">
+      <table class="results">
+        <thead>
+          <tr><th>Date</th><th>Event</th><th>Class</th><th>Result</th><th>Time</th></tr>
+        </thead>
+        <tbody>
+          {% for r in races %}
+          <tr data-tags="{{ r.date | date: '%Y' }}">
+            <td class="nowrap">{{ r.date | date: "%d %b %Y" }}</td>
+            <td>
+              {% if r.link %}<a href="{{ r.link }}">{{ r.event }}</a>{% else %}{{ r.event }}{% endif %}
+              {% if r.location %}<span class="muted block">{{ r.location }}</span>{% endif %}
+            </td>
+            <td>{{ r.class }}</td>
+            <td class="nowrap">
+              {% if r.position %}
+              <span class="place{% if r.position <= 3 %} place--{{ r.position }}{% endif %}">{{ r.position }}</span>{% if r.field %}<span class="muted"> / {{ r.field }}</span>{% endif %}
+              {% else %}
+              <span class="muted">{{ r.status | default: "–" }}</span>
+              {% endif %}
+            </td>
+            <td class="nowrap tabular">{{ r.time }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,68 @@
+---
+layout: default
+---
+{% assign profile = site.data.profile %}
+<section class="hero">
+  <div class="hero-photo">
+    {% if profile.photo %}
+    <img src="{{ profile.photo | relative_url }}" alt="Photo of {{ profile.name }}">
+    {% else %}
+    <span class="avatar-initials" aria-hidden="true">{{ profile.initials }}</span>
+    {% endif %}
+  </div>
+  <div class="hero-text">
+    <p class="eyebrow">{{ profile.role }} · {{ profile.organisation }}{% if profile.location %} · {{ profile.location }}{% endif %}</p>
+    <h1>Hi, I'm {{ profile.name }}.</h1>
+    <p class="lead">{{ profile.tagline }}</p>
+    <div class="pill-row">
+      {% for link in profile.links %}
+      <a class="pill" href="{{ link.url }}">{{ link.label }}</a>
+      {% endfor %}
+      {% if profile.resume_pdf %}
+      <a class="pill pill--accent" href="{{ profile.resume_pdf | relative_url }}">Résumé (PDF)</a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+<section class="prose about">
+  {{ content }}
+</section>
+
+<section class="home-section">
+  <div class="section-head">
+    <h2>Selected publications</h2>
+    <a class="more" href="{{ '/publications/' | relative_url }}">All publications →</a>
+  </div>
+  {% assign selected = site.data.publications | where: "selected", true | sort: "year" | reverse %}
+  <ol class="pub-list">
+    {% for p in selected limit: 3 %}{% include publication.html pub=p %}{% endfor %}
+  </ol>
+</section>
+
+<section class="home-section">
+  <div class="section-head">
+    <h2>Featured projects</h2>
+    <a class="more" href="{{ '/projects/' | relative_url }}">All projects →</a>
+  </div>
+  {% assign featured = site.data.projects | where: "featured", true %}
+  <div class="card-grid">
+    {% for p in featured limit: 3 %}{% include project-card.html project=p %}{% endfor %}
+  </div>
+</section>
+
+<section class="home-section split">
+  <a class="teaser" href="{{ '/career/' | relative_url }}">
+    <span class="eyebrow">Career</span>
+    {% assign current = site.data.career | first %}
+    <strong>{{ current.role }}</strong>
+    <span>{{ current.org }} · {{ current.start }}–{{ current.end }}</span>
+    <span class="more">See the full timeline →</span>
+  </a>
+  <a class="teaser teaser--water" href="{{ '/beyond-work/' | relative_url }}">
+    <span class="eyebrow">Beyond Work</span>
+    <strong>Canoe racing, water sports &amp; 360° views</strong>
+    <span>{{ site.data.races.size }} races logged</span>
+    <span class="more">Take a look →</span>
+  </a>
+</section>

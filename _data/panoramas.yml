@@ -1,0 +1,29 @@
+# 360° photos for the Beyond Work page, viewed with Pannellum.
+#
+# Images must be equirectangular (2:1, e.g. 6000x3000) — the default export from
+# most 360 cameras (Insta360, Ricoh Theta, GoPro Max) and phone panorama apps.
+# Keep each file under ~10 MB; larger ones load slowly and may fail on phones.
+#
+#   image:   the full 360 image, e.g. /assets/img/360/reservoir.jpg
+#   preview: optional small still shown before the viewer loads
+#
+# Example (remove the leading '#' to enable):
+#
+# - title: Morning at the reservoir
+#   location: Somewhere, Singapore
+#   date: 2025-06-01
+#   caption: Flat water before the 7am training session.
+#   image: /assets/img/360/reservoir.jpg
+#   preview: /assets/img/360/reservoir-preview.jpg
+
+- title: A Rare Clear Day on Britain's Highest Peak
+  location: Ben Nevis, United Kingdom
+  date: 2023-12-26
+  caption: Hike up Ben Nevis with a surprisingly clear view.
+  image: /assets/img/360/BenNevis.jpg
+
+- title: Aurora over Cambridge
+  location: Cambridge, United Kingdom
+  date: 2024-10-10
+  caption: Northern lights over Cambridge during the historic geomagnetic storm of October 2024.
+  image: /assets/img/360/Aurora.jpg
