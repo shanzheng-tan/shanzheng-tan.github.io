@@ -25,9 +25,48 @@ layout: default
   </div>
 </section>
 
-<section class="prose about">
-  {{ content }}
-</section>
+<div class="about-grid">
+  <section class="prose about">
+    {{ content }}
+  </section>
+
+  {% comment %} Earlier employers (current one skipped), using `short` names where set {% endcomment %}
+  {% assign work = site.data.career | where: "type", "work" %}
+  {% assign current = work | first %}
+  {% assign seen = current.org | append: "|" %}
+  {% capture previously %}{% for item in work offset: 1 %}{% assign name = item.short | default: item.org %}{% unless seen contains name %}{% assign seen = seen | append: name | append: "|" %}<li>{{ name }}</li>{% endunless %}{% endfor %}{% endcapture %}
+  {% assign latest = site.data.races | sort: "date" | reverse | first %}
+  <aside class="glance">
+    <h2>At a glance</h2>
+    <dl>
+      {% if previously != "" %}
+      <div>
+        <dt>Previously</dt>
+        <dd><ul>{{ previously }}</ul></dd>
+      </div>
+      {% endif %}
+      {% if profile.highlights %}
+      <div>
+        <dt>Highlights</dt>
+        <dd><ul>{% for h in profile.highlights %}<li>{{ h }}</li>{% endfor %}</ul></dd>
+      </div>
+      {% endif %}
+      {% if latest %}
+      {% assign mod100 = latest.position | modulo: 100 %}
+      {% assign mod10 = latest.position | modulo: 10 %}
+      {% if mod100 >= 11 and mod100 <= 13 %}{% assign suffix = "th" %}
+      {% elsif mod10 == 1 %}{% assign suffix = "st" %}
+      {% elsif mod10 == 2 %}{% assign suffix = "nd" %}
+      {% elsif mod10 == 3 %}{% assign suffix = "rd" %}
+      {% else %}{% assign suffix = "th" %}{% endif %}
+      <div>
+        <dt>Latest race</dt>
+        <dd><a href="{{ '/beyond-work/#racing' | relative_url }}">{% if latest.position %}{{ latest.position }}{{ suffix }} · {% endif %}{{ latest.event }}</a><span class="muted block">{{ latest.class }}</span></dd>
+      </div>
+      {% endif %}
+    </dl>
+  </aside>
+</div>
 
 <section class="home-section">
   <div class="section-head">

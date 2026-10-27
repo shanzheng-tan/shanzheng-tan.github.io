@@ -12,6 +12,13 @@ tagline: I take generative AI from research to products people use.
 photo: /assets/img/profile.jpg # square works best
 resume_pdf: /assets/files/Resume_Shanzheng_Tan.pdf
 
+# Short highlights for the "At a glance" card beside the bio on the home page.
+# "Now", "Previously" and "Latest race" fill in automatically from career.yml and races.yml.
+highlights:
+  - Nature 2025 · WHAM (Muse)
+  - US patent application, Generative Neural Application Engine
+  - PMP · CSM
+
 links:
   - label: Email
     url: mailto:shan.hello@outlook.com

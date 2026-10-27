@@ -295,6 +295,19 @@ main.container { padding-block: 2.5rem 4rem; }
 .prose { max-width: 68ch; font-size: 1.05rem; }
 .about { max-width: none; padding-bottom: 1rem; }
 
+.about-grid { display: grid; grid-template-columns: minmax(0, 1fr) 18rem; gap: 2.5rem; align-items: start; }
+.about-grid .about { padding-bottom: 0; }
+.glance dl { margin: 0; display: grid; gap: 0.9rem; }
+.glance dt { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--text-muted); }
+.glance dd { margin: 0.15rem 0 0; font-size: 0.92rem; line-height: 1.45; }
+.glance ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.3rem; }
+.glance a { text-decoration: none; font-weight: 500; }
+.glance .block { font-size: 0.85rem; }
+
+@media (max-width: 900px) {
+  .about-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
 .home-section { margin-top: 3rem; }
 .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 1rem; }
 .section-head h2 { margin: 0; }
@@ -381,14 +394,14 @@ main.container { padding-block: 2.5rem 4rem; }
 .career-layout { display: grid; grid-template-columns: minmax(0, 1fr) 15rem; gap: 2.5rem; align-items: start; }
 .career-aside { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 1.25rem; }
 .career-aside .pill { text-align: center; }
-.certs {
+.certs, .glance {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1.1rem 1.25rem;
   box-shadow: var(--shadow);
 }
-.certs h2 {
+.certs h2, .glance h2 {
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.08em;

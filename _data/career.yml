@@ -2,6 +2,7 @@
 #
 #   type: work | education
 #   end:  leave as "Present" for your current role
+#   short: optional shorter organisation name for the home page card
 #
 # Source: assets/files/Resume_Shanzheng_Tan.pdf
 
@@ -63,6 +64,7 @@
 - type: work
   role: Executive
   org: Infocomm Media Development Authority (IMDA)
+  short: IMDA # used in the home page "At a glance" card
   location: Singapore
   start: Dec 2017
   end: Jul 2019

@@ -5,10 +5,10 @@ title: About
 
 <!-- Your bio, written in Markdown. Two or three short paragraphs works best. -->
 
-Senior Technical Programme Manager for generative AI at Canva.
+I lead generative AI delivery at Canva.
 
 Before Canva, I spent three years with the Game Intelligence team at Microsoft Research Cambridge.
-There I ran the programme behind WHAM (Muse), a generative model of gameplay published in *Nature* in 2025,
+There I ran the programme behind [WHAM (Muse)](/projects/), a generative model of gameplay published in [*Nature*](/publications/) in 2025,
 and I'm one of its ten primary authors. I also worked on its real-time successor, WHAMM, which shipped
 as a playable Quake II demo in Copilot Labs.
 
