@@ -300,29 +300,6 @@ main.container { padding-block: 2.5rem 4rem; }
 .section-head h2 { margin: 0; }
 .more { font-size: 0.9rem; font-weight: 500; text-decoration: none; white-space: nowrap; }
 
-.split { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.25rem; }
-.teaser {
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
-  padding: 1.5rem;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: var(--surface);
-  color: var(--text);
-  text-decoration: none;
-  box-shadow: var(--shadow);
-  transition: transform 0.15s ease, border-color 0.15s ease;
-}
-.teaser:hover { transform: translateY(-2px); border-color: var(--accent); color: var(--text); }
-.teaser strong { font-size: 1.1rem; }
-.teaser span:not(.eyebrow):not(.more) { color: var(--text-muted); font-size: 0.93rem; }
-.teaser .more { margin-top: 0.75rem; color: var(--accent); }
-.teaser--water { background: var(--water-grad); border-color: transparent; color: #fff; }
-.teaser--water:hover { color: #fff; border-color: transparent; }
-.teaser--water .eyebrow,
-.teaser--water .more,
-.teaser--water span:not(.eyebrow):not(.more) { color: rgb(255 255 255 / 88%); }
 
 /* =========================================================
    Publications
@@ -401,8 +378,32 @@ main.container { padding-block: 2.5rem 4rem; }
 .timeline-kind { float: right; font-size: 0.7rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--accent); }
 .timeline-item--education .timeline-kind { color: var(--gold); }
 
-.certs { margin-top: 1rem; }
-.certs ul { padding-left: 1.2rem; }
+.career-layout { display: grid; grid-template-columns: minmax(0, 1fr) 15rem; gap: 2.5rem; align-items: start; }
+.career-aside { position: sticky; top: 80px; display: flex; flex-direction: column; gap: 1.25rem; }
+.career-aside .pill { text-align: center; }
+.certs {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  box-shadow: var(--shadow);
+}
+.certs h2 {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+.certs ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.75rem; font-size: 0.93rem; }
+.certs li { padding-left: 0.9rem; border-left: 2px solid var(--accent-soft); line-height: 1.45; }
+
+@media (max-width: 900px) {
+  .career-layout { grid-template-columns: 1fr; }
+  .career-aside { position: static; order: -1; }
+  .career-aside .pill { align-self: flex-start; }
+}
 
 @media (max-width: 640px) {
   .timeline::before { left: 6px; }

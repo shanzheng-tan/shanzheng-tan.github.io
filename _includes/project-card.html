@@ -2,7 +2,7 @@
 {% assign p = include.project %}
 <article class="card project-card" data-tags="{% for tag in p.tags %}{{ tag | slugify }} {% endfor %}">
   {% if p.image %}
-  <img class="card-media" src="{{ p.image | relative_url }}" alt="" loading="lazy">
+  <img class="card-media" src="{{ p.image | relative_url }}" alt="Screenshot of {{ p.title }}" loading="lazy"{% if p.image_position %} style="object-position: {{ p.image_position }}"{% endif %}>
   {% else %}
   <div class="card-media card-media--placeholder" aria-hidden="true">{{ p.title | slice: 0 }}</div>
   {% endif %}

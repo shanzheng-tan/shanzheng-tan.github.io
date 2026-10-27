@@ -1,6 +1,7 @@
 # Hobbies and water sports shown as cards on the Beyond Work page.
 #
-#   image: optional, e.g. /assets/img/beyond-work/canoe.jpg (4:3 works best)
+#   image:      optional, e.g. /assets/img/beyond-work/canoe.jpg (4:3 works best)
+#   image_link: optional, makes the image clickable (e.g. the original post)
 
 - name: Canoe Racing
   since: "2022"
@@ -8,7 +9,8 @@
     Marathon racing. Started on the UK Hasler circuit around Cambridge,
     moving up from Division 9 to 7, and now racing canoes in Victoria,
     Australia. Results are listed further down this page.
-  image:
+  image: /assets/img/beyond-work/canoe-racing.jpg
+  image_link: https://www.facebook.com/groups/AustrlianCanoeRacing/permalink/2935556803304340/
 
 # - name: Another Hobby
 #   summary: Travel, photography, or anything else you'd like to share.

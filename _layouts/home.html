@@ -50,19 +50,3 @@ layout: default
     {% for p in featured limit: 3 %}{% include project-card.html project=p %}{% endfor %}
   </div>
 </section>
-
-<section class="home-section split">
-  <a class="teaser" href="{{ '/career/' | relative_url }}">
-    <span class="eyebrow">Career</span>
-    {% assign current = site.data.career | first %}
-    <strong>{{ current.role }}</strong>
-    <span>{{ current.org }} · {{ current.start }}–{{ current.end }}</span>
-    <span class="more">See the full timeline →</span>
-  </a>
-  <a class="teaser teaser--water" href="{{ '/beyond-work/' | relative_url }}">
-    <span class="eyebrow">Beyond Work</span>
-    <strong>Canoe racing, water sports &amp; 360° views</strong>
-    <span>{{ site.data.races.size }} races logged</span>
-    <span class="more">Take a look →</span>
-  </a>
-</section>

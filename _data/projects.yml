@@ -1,6 +1,7 @@
 # Mini projects, shown in this order.
 #
 #   image:    optional, e.g. /assets/img/projects/thing.jpg (16:9 works best)
+#   image_position: optional crop anchor when the image isn't 16:9, e.g. "top left"
 #   featured: true -> also shown on the home page
 #   links:    any of code, demo, writeup (omit the ones you don't have)
 
@@ -8,6 +9,8 @@
   summary: >-
     Standalone MIDI router for Raspberry Pi. Route, remap channels and filter
     USB MIDI gear from a web dashboard, then play with no computer or DAW.
+  image: /assets/img/projects/pi-midi-router.png
+  image_position: top left
   year: 2026
   tags: [Raspberry Pi, Python, MIDI]
   featured: true
