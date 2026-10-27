@@ -5,7 +5,7 @@
 layout: page
 title: Beyond Work
 permalink: /beyond-work/
-pannellum: true
+pannellum: false # set to true when the 360° section is re-enabled
 intro: Canoe racing, water sports and the places they take me.
 ---
 
@@ -87,7 +87,10 @@ intro: Canoe racing, water sports and the places they take me.
   </div>
 </section>
 
-{% comment %} ---------- 360° photos ---------- {% endcomment %}
+{% comment %} ---------- 360° photos ----------
+  Hidden for now: the layout needs work. To bring it back, delete this
+  comment wrapper (and its matching endcomment below) and set `pannellum: true`
+  in the front matter.
 <section class="bw-section">
   <h2>Moments in 360°</h2>
   {% if site.data.panoramas and site.data.panoramas.size > 0 %}
@@ -113,3 +116,4 @@ intro: Canoe racing, water sports and the places they take me.
   <p class="empty-note">360° photos coming soon.</p>
   {% endif %}
 </section>
+{% endcomment %}

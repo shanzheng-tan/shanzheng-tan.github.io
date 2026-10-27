@@ -293,7 +293,7 @@ main.container { padding-block: 2.5rem 4rem; }
 }
 
 .prose { max-width: 68ch; font-size: 1.05rem; }
-.about { padding-bottom: 1rem; }
+.about { max-width: none; padding-bottom: 1rem; }
 
 .home-section { margin-top: 3rem; }
 .section-head { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 1rem; }

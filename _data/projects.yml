@@ -3,7 +3,20 @@
 #   image:    optional, e.g. /assets/img/projects/thing.jpg (16:9 works best)
 #   image_position: optional crop anchor when the image isn't 16:9, e.g. "top left"
 #   featured: true -> also shown on the home page
-#   links:    any of code, demo, writeup (omit the ones you don't have)
+#   links:    any of code, demo, writeup, model, paper (omit the ones you don't have)
+
+- title: WHAM (Muse)
+  summary: >-
+    World and Human Action Model, a generative model of gameplay trained on
+    Ninja Theory's Bleeding Edge. Open weights (200M and 1.6B) released with
+    the Nature paper, from the Microsoft Research programme I ran.
+  image: /assets/img/projects/wham.gif
+  year: 2025
+  tags: [Generative AI, Research, Open Weights]
+  featured: true
+  links:
+    model: https://huggingface.co/microsoft/wham
+    paper: https://doi.org/10.1038/s41586-025-08600-3
 
 - title: Pi MIDI Router
   summary: >-
