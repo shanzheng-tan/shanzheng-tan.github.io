@@ -1,9 +1,7 @@
 # Career timeline, newest first (shown in this order).
 #
 #   type: work | education
-#   end:  leave as "Present" for your current role
-#   short: optional shorter organisation name for the home page card
-#
+#   end:  leave as "Present" for your current role#
 # Source: assets/files/Resume_Shanzheng_Tan.pdf
 
 - type: work
@@ -63,9 +61,7 @@
 
 - type: work
   role: Executive
-  org: Infocomm Media Development Authority (IMDA)
-  short: IMDA # used in the home page "At a glance" card
-  location: Singapore
+  org: Infocomm Media Development Authority (IMDA)  location: Singapore
   start: Dec 2017
   end: Jul 2019
   highlights:
