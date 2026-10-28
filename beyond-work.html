@@ -68,7 +68,9 @@ intro: Canoe racing, water sports and the places they take me.
             <td class="nowrap">{{ r.date | date: "%d %b %Y" }}</td>
             <td>
               {% if r.link %}<a href="{{ r.link }}">{{ r.event }}</a>{% else %}{{ r.event }}{% endif %}
+              {% if r.level %}<span class="level level--{{ r.level }}">{{ r.level | capitalize }}</span>{% endif %}
               {% if r.location %}<span class="muted block">{{ r.location }}</span>{% endif %}
+              {% if r.note %}<span class="race-note block">{{ r.note }}</span>{% endif %}
             </td>
             <td>{{ r.class }}</td>
             <td class="nowrap">

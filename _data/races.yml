@@ -5,6 +5,8 @@
 #   status:   optional text such as DNF, DNS, DSQ
 #   field:    optional number of starters, shown as "2 / 18"
 #   link:     optional link to official results
+#   level:    optional badge: national | state
+#   note:     optional short line shown under the event
 #
 # Sources:
 #   UK:        https://entries.canoemarathon.org.uk/results/search?q=shanzheng+tan
@@ -38,7 +40,8 @@
   link: https://www.webscorer.com/racedetails?raceid=432394&did=590872&cid=3358214
 
 - date: 2026-04-11
-  event: Long Course Singles (ICF Masters)
+  event: Paddle Australia Canoe Marathon Championships, Long Course
+  level: national
   location: Campbell, ACT, Australia
   class: ICF C1 M 35-49
   position: 1
@@ -46,7 +49,8 @@
   link: https://www.webscorer.com/racedetails?raceid=427498&did=582864&cid=3293821
 
 - date: 2026-04-10
-  event: Short Course with Portage (ICF Masters)
+  event: Paddle Australia Canoe Marathon Championships, Short Course (with portage)
+  level: national
   location: Campbell, ACT, Australia
   class: ICF C1 M 35-44
   position: 1
@@ -55,6 +59,7 @@
 
 - date: 2026-03-21
   event: Victorian Canoe Marathon Championships
+  level: state
   location: Newtown, VIC, Australia
   class: UC1 M Open 13km
   position: 2
@@ -63,6 +68,7 @@
 
 - date: 2026-03-01
   event: Paddle Victoria Sprint State Championships
+  level: state
   location: VIC, Australia
   class: Men Open C1 200m (Final)
   position: 1
@@ -71,6 +77,7 @@
 
 - date: 2026-02-14
   event: Frank Harrison Interstate Marathon Cup
+  note: One of my longest races (26 km)
   location: Bonegilla, VIC, Australia
   class: Canoe Open 26km
   position: 7
@@ -87,6 +94,7 @@
 
 - date: 2025-11-29
   event: Canoe Sprint Grand Prix 1 & Long Distance National Championships
+  level: national
   location: Australia
   class: Men C1 5000m Open
   position: 1
@@ -95,6 +103,7 @@
 
 - date: 2025-11-15
   event: PVM 5-10km Championships
+  level: state
   location: Bendigo, VIC, Australia
   class: Canoe 5km
   position: 1
@@ -139,6 +148,7 @@
 
 - date: 2024-09-08
   event: National MacGregor Inter-Club Challenge
+  level: national
   location: Holme Pierrepont, Nottingham, UK
   class: C1 A-D 200m (Final 2)
   position: 3
@@ -147,6 +157,7 @@
 
 - date: 2024-09-07
   event: National MacGregor Inter-Club Challenge
+  level: national
   location: Holme Pierrepont, Nottingham, UK
   class: C2 A-D 1000m (with George Bell)
   position: 4
@@ -155,6 +166,7 @@
 
 - date: 2024-09-07
   event: National MacGregor Inter-Club Challenge
+  level: national
   location: Holme Pierrepont, Nottingham, UK
   class: C1 A-D 500m (Final 2)
   position: 7
@@ -163,6 +175,7 @@
 
 - date: 2024-06-08
   event: British Masters & U23 Sprint National Championships
+  level: national
   location: Holme Pierrepont, Nottingham, UK
   class: C1 A-D 200m (Final)
   position: 7

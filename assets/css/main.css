@@ -473,6 +473,23 @@ main.container { padding-block: 2.5rem 4rem; }
 .results tbody tr:hover { background: var(--surface-2); }
 .results .block { font-size: 0.85rem; }
 
+/* Event level badges (national / state) and short notes in the results table */
+.level {
+  display: inline-block;
+  margin-left: 0.35rem;
+  padding: 0.05rem 0.45rem;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  vertical-align: 0.1em;
+  white-space: nowrap;
+}
+.level--national { background: color-mix(in srgb, var(--gold) 18%, transparent); color: var(--gold); }
+.level--state { background: var(--accent-soft); color: var(--accent-strong); }
+.race-note { font-style: italic; color: var(--accent); }
+
 .place {
   display: inline-grid;
   place-items: center;
