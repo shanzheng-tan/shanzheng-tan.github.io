@@ -1,16 +1,21 @@
-{% comment %} One publication entry. Usage: {% include publication.html pub=p %} {% endcomment %}
+{% comment %}
+  One publication entry. (e.g. doi, patent or pdf). Usage: {% include publication.html pub=p %}
+{% endcomment %}
 {% assign p = include.pub %}
 {% assign authors = p.authors %}
 {% for name in site.data.profile.pub_names %}
   {% capture me %}<strong>{{ name }}</strong>{% endcapture %}
   {% assign authors = authors | replace: name, me %}
 {% endfor %}
-<li class="pub" data-tags="{{ p.type }}">
+{% assign url = nil %}
+{% for link in p.links limit: 1 %}{% assign url = link[1] %}{% endfor %}
+<li class="pub{% if url %} pub--link{% endif %}" data-tags="{{ p.type }}">
   <span class="pub-type pub-type--{{ p.type }}">{{ p.type }}</span>
   <div class="pub-body">
-    <p class="pub-title">{{ p.title }}</p>
+    <p class="pub-title">
+      {% if url %}<a class="pub-link" href="{{ url }}" target="_blank" rel="noopener">{{ p.title }}<span class="pub-arrow" aria-hidden="true"> ↗</span></a>{% else %}{{ p.title }}{% endif %}
+    </p>
     <p class="pub-authors">{{ authors }}</p>
     <p class="pub-venue">{{ p.venue }}, {{ p.year }}</p>
-    {% include link-buttons.html links=p.links %}
   </div>
 </li>

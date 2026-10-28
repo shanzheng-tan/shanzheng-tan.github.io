@@ -1,18 +1,30 @@
-{% comment %} One project card. Usage: {% include project-card.html project=p %} {% endcomment %}
+{% comment %}
+  One project card, further links show as small buttons. Usage: {% include project-card.html project=p %}
+{% endcomment %}
 {% assign p = include.project %}
-<article class="card project-card" data-tags="{% for tag in p.tags %}{{ tag | slugify }} {% endfor %}">
+{% assign url = nil %}
+{% for link in p.links limit: 1 %}{% assign url = link[1] %}{% endfor %}
+<article class="card project-card{% if url %} card--link{% endif %}" data-tags="{% for tag in p.tags %}{{ tag | slugify }} {% endfor %}">
   {% if p.image %}
   <img class="card-media" src="{{ p.image | relative_url }}" alt="Screenshot of {{ p.title }}" loading="lazy"{% if p.image_position %} style="object-position: {{ p.image_position }}"{% endif %}>
   {% else %}
   <div class="card-media card-media--placeholder" aria-hidden="true">{{ p.title | slice: 0 }}</div>
   {% endif %}
   <div class="card-body">
-    <h3>{{ p.title }}</h3>
+    <h3>
+      {% if url %}<a class="card-link" href="{{ url }}" target="_blank" rel="noopener">{{ p.title }}<span class="card-arrow" aria-hidden="true"> ↗</span></a>{% else %}{{ p.title }}{% endif %}
+    </h3>
     <p>{{ p.summary }}</p>
     <ul class="tags">
       {% for tag in p.tags %}<li>{{ tag }}</li>{% endfor %}
       {% if p.year %}<li class="tag-year">{{ p.year }}</li>{% endif %}
     </ul>
-    {% include link-buttons.html links=p.links %}
+    {% if p.links.size > 1 %}
+    <div class="link-buttons">
+      {% for link in p.links offset: 1 %}
+      <a class="btn-small" href="{{ link[1] }}" target="_blank" rel="noopener">{{ link[0] | upcase }}</a>
+      {% endfor %}
+    </div>
+    {% endif %}
   </div>
 </article>
