@@ -3,7 +3,8 @@
 #   image:    optional, e.g. /assets/img/projects/thing.jpg (16:9 works best)
 #   image_position: optional crop anchor when the image isn't 16:9, e.g. "top left"
 #   featured: true -> also shown on the home page
-#   links:    any of code, demo, writeup, model, paper (omit the ones you don't have)
+#   links:    any of live, code, writeup, model, paper (omit the ones you don't have)
+#             the first one is where the whole card links; the rest show as small buttons
 
 - title: WHAM (Muse)
   summary: >-
@@ -16,6 +17,19 @@
   featured: true
   links:
     model: https://huggingface.co/microsoft/wham
+
+- title: Inside Line Sim
+  summary: >-
+    Browser simulator for marathon canoe and kayak racing. Reshape the river,
+    model current and boat wash, and race K1/K2/C1/C2 formations to find the
+    faster line before race day.
+  image: /assets/img/projects/inside-line-sim.png
+  year: 2026
+  tags: [JavaScript, Simulation, Paddling]
+  featured: true
+  links:
+    live: https://shan-sherif.github.io/inside-line-sim/
+    code: https://github.com/shan-sherif/inside-line-sim
 
 - title: Pi MIDI Router
   summary: >-
