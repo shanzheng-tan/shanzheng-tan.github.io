@@ -169,6 +169,79 @@
   time: "1:02.69"
   link: https://regattasearch.azurewebsites.net/regatta/Nottingham36?SearchString=Shanzheng+Tan
 
+# Flatwater Racing Association (Eastern region) Winter Series & Summer regattas.
+# Source: https://flatwaterracing.weebly.com/ws-results.html and /ss-results.html
+
+- date: 2024-09-15
+  event: Bishop's Stortford Sprint Regatta
+  location: Bishop's Stortford, UK
+  class: C1, combined 500m/200m/1000m (also Senior Men 1st)
+  position: 1
+  link: https://flatwaterracing.weebly.com/uploads/2/8/9/2/28922255/bsfregatta2024.pdf
+
+- date: 2024-01-14
+  event: Leighton Buzzard Winter Series
+  location: Leighton Buzzard, UK
+  class: C1 Advanced
+  position: 2
+  time: "1:12:49"
+  link: https://flatwaterracing.weebly.com/uploads/2/8/9/2/28922255/lbzws24d.pdf
+
+- date: 2023-12-03
+  event: Cambridge Winter Series
+  location: Cambridge, UK
+  class: C1 Advanced
+  position: 2
+  time: "1:07:05"
+  link: https://flatwaterracing.weebly.com/uploads/2/8/9/2/28922255/camws23c.pdf
+
+- date: 2023-11-26
+  event: Maidstone Winter Series
+  location: Maidstone, UK
+  class: Touring C2 (with Adrian Pyke)
+  position: 1
+  time: "0:13:56"
+  link: https://flatwaterracing.weebly.com/uploads/2/8/9/2/28922255/maiws23b.pdf
+
+- date: 2023-11-05
+  event: Bishop's Stortford Winter Series
+  location: Bishop's Stortford, UK
+  class: C1 Advanced
+  position: 1
+  time: "0:55:14"
+  link: https://flatwaterracing.weebly.com/uploads/2/8/9/2/28922255/bsfws23d.pdf
+
+- date: 2023-09-17
+  event: Bishop's Stortford Sprint Regatta
+  location: Bishop's Stortford, UK
+  class: C1, combined 500m/200m/1000m (also Senior Men 2nd)
+  position: 1
+  link: https://flatwaterracing.weebly.com/uploads/2/8/9/2/28922255/bsfregatta2023.pdf
+
+- date: 2023-02-05
+  event: Leighton Buzzard Winter Series
+  location: Leighton Buzzard, UK
+  class: C1 (Class Red, with K1 u14 F)
+  position: 2
+  time: "0:51:22"
+  link: https://flatwaterracing.weebly.com/uploads/2/8/9/2/28922255/lbzws23.pdf
+
+- date: 2023-01-22
+  event: Chelmsford Winter Series
+  location: Chelmsford, UK
+  class: C1 (Class Red, with K1 u14 F)
+  position: 2
+  time: "0:27:23"
+  link: https://flatwaterracing.weebly.com/uploads/2/8/9/2/28922255/clmws23.pdf
+
+- date: 2022-11-06
+  event: Bishop's Stortford Winter Series
+  location: Bishop's Stortford, UK
+  class: C1 (Class Red, with K1 u14 F)
+  position: 4
+  time: "0:34:33"
+  link: https://flatwaterracing.weebly.com/uploads/2/8/9/2/28922255/bsfws22e.pdf
+
 # Marathon results. Source: https://entries.canoemarathon.org.uk
 
 - date: 2025-01-26
@@ -176,6 +249,7 @@
   location: Leighton Buzzard, UK
   class: C1/SUP Advanced
   position: 2
+  time: "1:09:53" # from the FRA results PDF
   link: https://entries.canoemarathon.org.uk/results/races/2025/leighton-buzzard-winter-series-marathon#race-c1sup-adv
 
 - date: 2024-12-01
@@ -183,6 +257,7 @@
   location: Cambridge, UK
   class: C1/SUP Advanced
   position: 2
+  time: "1:02:57" # from the FRA results PDF
   link: https://entries.canoemarathon.org.uk/results/races/2024/cambridge-winter-series-marathon#race-c1sup-adv
 
 - date: 2024-10-13

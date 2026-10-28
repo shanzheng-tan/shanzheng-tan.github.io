@@ -16,7 +16,6 @@
   featured: true
   links:
     model: https://huggingface.co/microsoft/wham
-    paper: https://doi.org/10.1038/s41586-025-08600-3
 
 - title: Pi MIDI Router
   summary: >-

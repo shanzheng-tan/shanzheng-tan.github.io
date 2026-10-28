@@ -1,10 +1,11 @@
 # Hobbies and water sports shown as cards on the Beyond Work page.
 #
-#   image:      optional, e.g. /assets/img/beyond-work/canoe.jpg (4:3 works best)
-#   image_link: optional, makes the image clickable (e.g. the original post)
+#   image:          optional, e.g. /assets/img/beyond-work/canoe.jpg (4:3 works best)
+#   image_position: optional crop anchor when the image isn't 4:3, e.g. "center 20%"
+#   image_link:     optional, makes the image clickable (e.g. the original post)
+#   subtitle:       optional grey line under the name
 
 - name: Canoe Racing
-  since: "2022"
   summary: >-
     Marathon racing. Started on the UK Hasler circuit around Cambridge,
     moving up from Division 9 to 6, and now racing in Victoria,
@@ -12,6 +13,12 @@
   image: /assets/img/beyond-work/canoe-racing.jpg
   image_link: https://www.facebook.com/groups/AustrlianCanoeRacing/permalink/2935556803304340/
 
-# - name: Another Hobby
-#   summary: Travel, photography, or anything else you'd like to share.
-#   image:
+- name: C1 Trophy
+  subtitle: FRA Winter Series 2022–23
+  summary: >-
+    Awarded the C1 trophy for the Flatwater Racing Association Winter Series,
+    finishing 2nd overall in the combined Class Red. Presented at Leighton
+    Buzzard in February 2023.
+  image: /assets/img/beyond-work/c1-trophy-2023.jpg # photo: Flatwater Racing Association
+  image_position: center 28%
+  image_link: https://flatwaterracing.weebly.com/news/ws-2022-23-race-4-l-buzzard-series-results

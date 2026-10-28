@@ -17,14 +17,14 @@ intro: Canoe racing, water sports and the places they take me.
     <article class="card activity-card">
       {% if a.image %}
       {% if a.image_link %}<a href="{{ a.image_link }}" target="_blank" rel="noopener" title="View original post">{% endif %}
-      <img class="card-media card-media--4x3" src="{{ a.image | relative_url }}" alt="{{ a.name }}" loading="lazy">
+      <img class="card-media card-media--4x3" src="{{ a.image | relative_url }}" alt="{{ a.name }}" loading="lazy"{% if a.image_position %} style="object-position: {{ a.image_position }}"{% endif %}>
       {% if a.image_link %}</a>{% endif %}
       {% else %}
       <div class="card-media card-media--4x3 card-media--water" aria-hidden="true"></div>
       {% endif %}
       <div class="card-body">
         <h3>{{ a.name }}</h3>
-        {% if a.since %}<p class="muted">Since {{ a.since }}</p>{% endif %}
+        {% if a.subtitle %}<p class="muted">{{ a.subtitle }}</p>{% endif %}
         <p>{{ a.summary }}</p>
       </div>
     </article>

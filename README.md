@@ -15,6 +15,7 @@ Almost everything is edited in `_data/` — no HTML needed.
 | Bio paragraphs (Markdown) | `index.md` |
 | Publications | `_data/publications.yml` |
 | Career timeline | `_data/career.yml` |
+| Certifications & awards (Career sidebar) | `_data/certifications.yml` |
 | Projects | `_data/projects.yml` |
 | Hobbies / water sports cards | `_data/activities.yml` |
 | 360° photos | `_data/panoramas.yml` |
