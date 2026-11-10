@@ -38,7 +38,6 @@
   image_position: top left
   year: 2026
   tags: [Raspberry Pi, Python, MIDI]
-  featured: true
   links:
     code: https://github.com/shan-sherif/pi-midi-router
 
@@ -50,5 +49,6 @@
   image: /assets/img/projects/midi-mania.gif
   year: 2026
   tags: [Firmware, C, MIDI, Game]
+  featured: true
   links:
     live: https://shan-sherif.github.io/fm-1-midi-mania/
