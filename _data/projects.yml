@@ -41,3 +41,14 @@
   featured: true
   links:
     code: https://github.com/shan-sherif/pi-midi-router
+
+- title: FM-1 Midi-Mania
+  summary: >-
+    Rhythm-game firmware for the M-VAVE FM-1 synth. Turn any MIDI song into a
+    chart: the FM-1 plays the backing while notes fall to its keys, and every
+    press you play is scored PERFECT, GREAT, GOOD or MISS. Try it in the browser.
+  image: /assets/img/projects/midi-mania.gif
+  year: 2026
+  tags: [Firmware, C, MIDI, Game]
+  links:
+    live: https://shan-sherif.github.io/fm-1-midi-mania/
