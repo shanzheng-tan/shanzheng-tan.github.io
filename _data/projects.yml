@@ -30,17 +30,6 @@
   links:
     live: https://shan-sherif.github.io/inside-line-sim/
 
-- title: Pi MIDI Router
-  summary: >-
-    Standalone MIDI router for Raspberry Pi. Route, remap channels and filter
-    USB MIDI gear from a web dashboard, then play with no computer or DAW.
-  image: /assets/img/projects/pi-midi-router.png
-  image_position: top left
-  year: 2026
-  tags: [Raspberry Pi, Python, MIDI]
-  links:
-    code: https://github.com/shan-sherif/pi-midi-router
-
 - title: FM-1 Midi-Mania
   summary: >-
     Rhythm-game firmware for the M-VAVE FM-1 synth. Turn any MIDI song into a
@@ -52,3 +41,36 @@
   featured: true
   links:
     live: https://shan-sherif.github.io/fm-1-midi-mania/
+
+- title: Cobot Sandbox
+  summary: >-
+    MuJoCo sandbox for robot-manipulation research with the Franka FR3 and
+    UR5e. Drive them by keyboard or gamepad, run scripted solvers, and record
+    demonstrations for imitation and reinforcement learning.
+  image: /assets/img/projects/cobot-sandbox.png
+  year: 2026
+  tags: [Python, Robotics, MuJoCo, Simulation]
+  links:
+    code: https://github.com/shan-sherif/cobot-sandbox
+
+- title: muse-midi-dx
+  summary: >-
+    Browser rhythm game for your MIDI keyboard or e-drum kit. Notes fall onto a
+    piano, a drum kit or both, and every press is scored. The sound comes from
+    the Melodee FM-1 synth firmware, compiled to WebAssembly.
+  image: /assets/img/projects/muse-midi-dx.gif
+  year: 2026
+  tags: [JavaScript, WebAssembly, MIDI, Game]
+  links:
+    live: https://shan-sherif.github.io/muse-midi-dx/
+
+- title: Pi MIDI Router
+  summary: >-
+    Standalone MIDI router for Raspberry Pi. Route, remap channels and filter
+    USB MIDI gear from a web dashboard, then play with no computer or DAW.
+  image: /assets/img/projects/pi-midi-router.png
+  image_position: top left
+  year: 2026
+  tags: [Raspberry Pi, Python, MIDI]
+  links:
+    code: https://github.com/shan-sherif/pi-midi-router
